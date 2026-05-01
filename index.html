@@ -13,6 +13,9 @@
   <meta property="og:description" content="Treinos presenciais e online, com método e acompanhamento próximo." data-i18n="meta.ogDescription" data-i18n-attr="content">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://flaribeiro.com/">
+  <meta property="og:image" content="https://flaribeiro.com/images/hero.jpg">
+  <meta property="og:image:alt" content="Flávia Ribeiro, personal trainer">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="canonical" href="https://flaribeiro.com/">
   <link rel="alternate" hreflang="pt-BR" href="https://flaribeiro.com/">
@@ -124,11 +127,17 @@
             <li><strong data-i18n="hero.proof3Number">CREF</strong> <span data-i18n="hero.proof3Label">profissional registrada</span></li>
           </ul>
         </div>
-        <figure class="hero__photo" aria-label="Flávia Ribeiro">
-          <div class="photo-placeholder photo-placeholder--portrait" aria-hidden="true">
-            <span class="photo-placeholder__monogram">FR</span>
-          </div>
-          <figcaption class="visually-hidden">Flávia Ribeiro, personal trainer.</figcaption>
+        <figure class="hero__photo">
+          <img
+            src="images/hero.jpg"
+            alt="Flávia Ribeiro, personal trainer, sorrindo com os braços cruzados"
+            data-i18n="hero.photoAlt"
+            data-i18n-attr="alt"
+            width="683" height="1024"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+          >
         </figure>
       </div>
     </section>
@@ -234,13 +243,25 @@
         <p class="section__eyebrow" data-i18n="gallery.eyebrow">Galeria</p>
         <h2 id="gallery-heading" class="section__title" data-i18n="gallery.title">Treino em ação</h2>
 
-        <ul class="gallery-grid gallery-grid--placeholder" role="list">
-          <li><div class="photo-placeholder" aria-hidden="true"><span class="photo-placeholder__monogram">FR</span></div></li>
-          <li><div class="photo-placeholder photo-placeholder--alt" aria-hidden="true"><span class="photo-placeholder__monogram">FR</span></div></li>
-          <li><div class="photo-placeholder" aria-hidden="true"><span class="photo-placeholder__monogram">FR</span></div></li>
-          <li><div class="photo-placeholder photo-placeholder--alt" aria-hidden="true"><span class="photo-placeholder__monogram">FR</span></div></li>
-          <li><div class="photo-placeholder" aria-hidden="true"><span class="photo-placeholder__monogram">FR</span></div></li>
-          <li><div class="photo-placeholder photo-placeholder--alt" aria-hidden="true"><span class="photo-placeholder__monogram">FR</span></div></li>
+        <ul class="gallery-grid" role="list">
+          <li>
+            <img src="images/gallery-1.jpg"
+                 alt="Flávia Ribeiro fazendo rosca direta com anilha"
+                 data-i18n="gallery.alt1" data-i18n-attr="alt"
+                 width="683" height="1024" loading="lazy" decoding="async">
+          </li>
+          <li>
+            <img src="images/gallery-2.jpg"
+                 alt="Flávia Ribeiro em posição de afundo sobre um step"
+                 data-i18n="gallery.alt2" data-i18n-attr="alt"
+                 width="683" height="1024" loading="lazy" decoding="async">
+          </li>
+          <li>
+            <img src="images/gallery-3.jpg"
+                 alt="Flávia Ribeiro sentada ao lado de halteres e kettlebell"
+                 data-i18n="gallery.alt3" data-i18n-attr="alt"
+                 width="1024" height="768" loading="lazy" decoding="async">
+          </li>
         </ul>
 
         <p class="section__footnote">
