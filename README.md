@@ -1,8 +1,8 @@
-# flaribeiro.com.br
+# flaribeiro.com
 
 Personal site for Flávia Ribeiro, personal trainer. Bilingual (pt-BR / en),
 plain HTML / CSS / JS, no build step. Deployed on GitHub Pages at
-[flaribeiro.com.br](https://flaribeiro.com.br).
+[flaribeiro.com](https://flaribeiro.com).
 
 ## Local preview
 
@@ -16,7 +16,7 @@ python3 -m http.server 8000
 - `styles.css` — design tokens via CSS custom properties; light + dark theme
 - `script.js` — `i18n` dictionary (pt-BR + en), language toggle, theme toggle, scroll affordance
 - `favicon.svg` — circular FR monogram in terracotta
-- `CNAME` — `flaribeiro.com.br`
+- `CNAME` — `flaribeiro.com`
 - `images/` — drop real photos here and update the `index.html` `photo-placeholder` blocks
 
 ## What's a placeholder
@@ -34,6 +34,6 @@ Also placeholder until Flávia confirms:
 
 ## DNS
 
-Apex `flaribeiro.com.br` is managed via Terraform in
+Apex `flaribeiro.com` is managed via Terraform in
 [`digitalocean-dns`](https://github.com/dynaum/digitalocean-dns) and points to
 GitHub Pages' four anycast A records.

@@ -77,7 +77,7 @@
       'contact.whatsappValue': 'Mensagem direta',
       'contact.igLabel': 'Instagram',
       'contact.emailLabel': 'E-mail',
-      'contact.emailValue': 'contato@flaribeiro.com.br',
+      'contact.emailValue': 'contato@flaribeiro.com',
 
       'footer.rights': 'Todos os direitos reservados.',
       'footer.toTop': 'Voltar ao topo'
@@ -156,7 +156,7 @@
       'contact.whatsappValue': 'Direct message',
       'contact.igLabel': 'Instagram',
       'contact.emailLabel': 'Email',
-      'contact.emailValue': 'contato@flaribeiro.com.br',
+      'contact.emailValue': 'contato@flaribeiro.com',
 
       'footer.rights': 'All rights reserved.',
       'footer.toTop': 'Back to top'
