@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FR">
-  <rect width="64" height="64" fill="#1d4634"/>
-  <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle"
-        font-family="Archivo, -apple-system, sans-serif"
-        font-weight="900" font-size="28" fill="#f4f1ea" letter-spacing="0.5">FR</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Flávia Ribeiro">
+  <rect width="64" height="64" fill="#f0e9d8"/>
+  <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle"
+        font-family="Fraunces, Georgia, serif"
+        font-style="italic" font-weight="500"
+        font-size="42" fill="#c43a1d">F</text>
 </svg>
