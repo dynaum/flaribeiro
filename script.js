@@ -18,17 +18,18 @@
       'aria.langToggle': 'Trocar para inglês',
       'aria.themeToggle': 'Mudar para tema escuro',
 
-      'hero.eyebrow': 'Personal trainer · Brasil',
-      'hero.title': 'Movimento com <em>propósito</em>.',
-      'hero.lede': 'Treinos presenciais e online desenhados para você — com método, acompanhamento próximo e foco no que importa: resultado que dura.',
-      'hero.cta1': 'Agende uma conversa',
-      'hero.cta2': 'Ver serviços',
+      'hero.stamp': '00 / Personal Trainer · Brasil',
+      'hero.titleL1': 'Movimento',
+      'hero.titleL2': 'com',
+      'hero.titleL3': 'propósito.',
+      'hero.lede': 'Treinos presenciais e online desenhados para você — método, acompanhamento próximo, e foco no que importa: resultado que dura.',
+      'hero.cta1': 'Agendar conversa <span class="button__arrow" aria-hidden="true">→</span>',
       'hero.proof1Number': '+100',
-      'hero.proof1Label': 'alunos atendidos',
+      'hero.proof1Label': 'alunos',
       'hero.proof2Number': '5★',
-      'hero.proof2Label': 'avaliação média',
+      'hero.proof2Label': 'avaliação',
       'hero.proof3Number': 'CREF',
-      'hero.proof3Label': 'profissional registrada',
+      'hero.proof3Label': 'registrada',
       'hero.photoAlt': 'Flávia Ribeiro, personal trainer, sorrindo com os braços cruzados',
 
       'about.eyebrow': 'Sobre',
@@ -36,8 +37,8 @@
       'about.p1': 'Sou Flávia Ribeiro, personal trainer apaixonada por ajudar pessoas a redescobrirem o próprio corpo. Acredito que o melhor treino é aquele que cabe na sua vida — e que respeita seu ritmo, seus limites e seus objetivos reais.',
       'about.p2': 'Trabalho com avaliações detalhadas, planejamento individualizado e acompanhamento constante. Cada plano é construído de acordo com a sua rotina, sua história e o resultado que você quer alcançar. Sem fórmula mágica, sem atalho — só método, presença e consistência.',
 
-      'services.eyebrow': 'Como posso te ajudar',
-      'services.title': 'Serviços',
+      'services.eyebrow': 'Serviços',
+      'services.title': 'Como posso te ajudar.',
       'services.s1Title': 'Treino presencial 1-a-1',
       'services.s1Body': 'Atendimento individual em estúdio ou domicílio. Avaliação completa, plano periodizado e progressão acompanhada de perto, sessão a sessão.',
       'services.s1Tag1': 'Presencial',
@@ -53,7 +54,7 @@
       'services.s3Tag2': 'Energia',
 
       'method.eyebrow': 'Método',
-      'method.title': 'Como a gente trabalha',
+      'method.title': 'Como a gente trabalha.',
       'method.s1Title': 'Avaliação',
       'method.s1Body': 'Conversa inicial, anamnese, testes funcionais e leitura honesta de onde você está hoje — sem julgamento.',
       'method.s2Title': 'Planejamento',
@@ -64,14 +65,14 @@
       'method.s4Body': 'Reavaliação periódica para celebrar o que avançou e ajustar o que precisa. Resultado que dura é resultado revisado.',
 
       'gallery.eyebrow': 'Galeria',
-      'gallery.title': 'Treino em ação',
+      'gallery.title': 'Treino em ação.',
       'gallery.alt1': 'Flávia Ribeiro fazendo rosca direta com anilha',
       'gallery.alt2': 'Flávia Ribeiro em posição de afundo sobre um step',
       'gallery.alt3': 'Flávia Ribeiro sentada ao lado de halteres e kettlebell',
       'gallery.igLink': 'Mais no Instagram <span aria-hidden="true">→</span>',
 
-      'contact.eyebrow': 'Vamos conversar',
-      'contact.title': 'Pronto para começar?',
+      'contact.eyebrow': 'Contato',
+      'contact.title': 'Pronto para <em>começar?</em>',
       'contact.p1': 'Conta um pouco sobre você, sua rotina e seus objetivos. Respondo em até 24 horas — sempre.',
       'contact.whatsappLabel': 'WhatsApp',
       'contact.whatsappValue': '+1 754 326 3220',
@@ -79,8 +80,7 @@
       'contact.emailLabel': 'E-mail',
       'contact.emailValue': 'contato@flaribeiro.com',
 
-      'footer.rights': 'Todos os direitos reservados.',
-      'footer.toTop': 'Voltar ao topo'
+      'footer.toTop': '↑ Topo'
     },
 
     'en': {
@@ -97,17 +97,18 @@
       'aria.langToggle': 'Switch to Portuguese',
       'aria.themeToggle': 'Switch to dark theme',
 
-      'hero.eyebrow': 'Personal trainer · Brazil',
-      'hero.title': 'Movement with <em>purpose</em>.',
-      'hero.lede': 'In-person and online training designed around you — built on method, close coaching, and the things that actually matter: results that last.',
-      'hero.cta1': 'Book a conversation',
-      'hero.cta2': 'See services',
+      'hero.stamp': '00 / Personal Trainer · Brazil',
+      'hero.titleL1': 'Movement',
+      'hero.titleL2': 'with',
+      'hero.titleL3': 'purpose.',
+      'hero.lede': 'In-person and online training designed around you — method, close coaching, and the things that actually matter: results that last.',
+      'hero.cta1': 'Book a conversation <span class="button__arrow" aria-hidden="true">→</span>',
       'hero.proof1Number': '100+',
-      'hero.proof1Label': 'clients coached',
+      'hero.proof1Label': 'clients',
       'hero.proof2Number': '5★',
-      'hero.proof2Label': 'average rating',
+      'hero.proof2Label': 'rating',
       'hero.proof3Number': 'CREF',
-      'hero.proof3Label': 'certified professional',
+      'hero.proof3Label': 'certified',
       'hero.photoAlt': 'Flávia Ribeiro, personal trainer, smiling with arms crossed',
 
       'about.eyebrow': 'About',
@@ -115,8 +116,8 @@
       'about.p1': "I'm Flávia Ribeiro, a personal trainer who loves helping people rediscover their own bodies. I believe the best training plan is the one that fits your life — that respects your pace, your limits, and the goals that are truly yours.",
       'about.p2': "I work with thorough assessments, individualized planning, and steady follow-through. Every plan is built around your routine, your history, and the outcome you actually want to reach. No magic formula, no shortcut — just method, presence, and consistency.",
 
-      'services.eyebrow': 'How I can help',
-      'services.title': 'Services',
+      'services.eyebrow': 'Services',
+      'services.title': 'How I can help.',
       'services.s1Title': '1-on-1 in person',
       'services.s1Body': 'Individual sessions at the studio or in your home. Full assessment, periodized plan, and progression tracked closely, session by session.',
       'services.s1Tag1': 'In person',
@@ -132,7 +133,7 @@
       'services.s3Tag2': 'Energy',
 
       'method.eyebrow': 'Method',
-      'method.title': 'How we work together',
+      'method.title': 'How we work together.',
       'method.s1Title': 'Assess',
       'method.s1Body': 'A first conversation, health history, functional testing, and an honest read on where you are today — no judgment.',
       'method.s2Title': 'Plan',
@@ -143,14 +144,14 @@
       'method.s4Body': 'Periodic reassessment to celebrate what moved and adjust what needs adjusting. Results that last are results that get reviewed.',
 
       'gallery.eyebrow': 'Gallery',
-      'gallery.title': 'Training in motion',
+      'gallery.title': 'Training in motion.',
       'gallery.alt1': 'Flávia Ribeiro performing a single-arm dumbbell curl',
       'gallery.alt2': 'Flávia Ribeiro in a forward lunge on a step platform',
       'gallery.alt3': 'Flávia Ribeiro seated next to dumbbells and a kettlebell',
       'gallery.igLink': 'More on Instagram <span aria-hidden="true">→</span>',
 
-      'contact.eyebrow': "Let's talk",
-      'contact.title': 'Ready to start?',
+      'contact.eyebrow': 'Contact',
+      'contact.title': 'Ready to <em>start?</em>',
       'contact.p1': 'Tell me a little about yourself, your routine, and your goals. I reply within 24 hours — always.',
       'contact.whatsappLabel': 'WhatsApp',
       'contact.whatsappValue': '+1 754 326 3220',
@@ -158,8 +159,7 @@
       'contact.emailLabel': 'Email',
       'contact.emailValue': 'contato@flaribeiro.com',
 
-      'footer.rights': 'All rights reserved.',
-      'footer.toTop': 'Back to top'
+      'footer.toTop': '↑ Top'
     }
   };
 

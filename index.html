@@ -6,8 +6,8 @@
   <title data-i18n="meta.title">Flávia Ribeiro — Personal Trainer</title>
   <meta name="description" content="Flávia Ribeiro — personal trainer. Treinos presenciais e online, com método e acompanhamento próximo." data-i18n="meta.description" data-i18n-attr="content">
   <meta name="author" content="Flávia Ribeiro">
-  <meta name="theme-color" content="#faf6ee" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#1a1814" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f4f1ea" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0e0c" media="(prefers-color-scheme: dark)">
 
   <meta property="og:title" content="Flávia Ribeiro — Personal Trainer" data-i18n="meta.title" data-i18n-attr="content">
   <meta property="og:description" content="Treinos presenciais e online, com método e acompanhamento próximo." data-i18n="meta.ogDescription" data-i18n-attr="content">
@@ -26,7 +26,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75,400;75,500;75,700;75,800;75,900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 
@@ -84,7 +84,7 @@
           data-i18n="aria.themeToggle"
           aria-pressed="false"
         >
-          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
             <circle cx="12" cy="12" r="4" fill="currentColor"/>
             <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
               <line x1="12" y1="2"  x2="12" y2="5"/>
@@ -97,7 +97,7 @@
               <line x1="17"  y1="7"     x2="19.1" y2="4.9"/>
             </g>
           </svg>
-          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
             <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="currentColor"/>
           </svg>
         </button>
@@ -110,23 +110,30 @@
     <section class="hero">
       <div class="container hero__grid">
         <div class="hero__copy">
-          <p class="eyebrow" data-i18n="hero.eyebrow">Personal trainer · Brasil</p>
-          <h1 class="hero__title" data-i18n="hero.title">
-            Movimento com <em>propósito</em>.
-          </h1>
-          <p class="hero__lede" data-i18n="hero.lede">
-            Treinos presenciais e online desenhados para você — com método, acompanhamento próximo e foco no que importa: resultado que dura.
-          </p>
-          <div class="hero__ctas">
-            <a class="button button--primary" href="#contact" data-i18n="hero.cta1">Agende uma conversa</a>
-            <a class="button button--ghost" href="#services" data-i18n="hero.cta2">Ver serviços</a>
+          <div class="hero__top">
+            <p class="hero__stamp" data-i18n="hero.stamp">00 / Personal Trainer · Brasil</p>
+            <h1 class="hero__title">
+              <span class="hero__title-line" data-i18n="hero.titleL1">Movimento</span>
+              <span class="hero__title-line" data-i18n="hero.titleL2">com</span>
+              <span class="hero__title-line hero__title-line--accent" data-i18n="hero.titleL3">propósito.</span>
+            </h1>
+            <p class="hero__lede" data-i18n="hero.lede">Treinos presenciais e online desenhados para você — método, acompanhamento próximo, e foco no que importa: resultado que dura.</p>
+            <div class="hero__ctas">
+              <a class="button button--primary" href="#contact" data-i18n="hero.cta1">
+                Agendar conversa <span class="button__arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
           </div>
-          <ul class="hero__proof" role="list">
-            <li><strong data-i18n="hero.proof1Number">+100</strong> <span data-i18n="hero.proof1Label">alunos atendidos</span></li>
-            <li><strong data-i18n="hero.proof2Number">5★</strong> <span data-i18n="hero.proof2Label">avaliação média</span></li>
-            <li><strong data-i18n="hero.proof3Number">CREF</strong> <span data-i18n="hero.proof3Label">profissional registrada</span></li>
-          </ul>
+
+          <div class="hero__bottom">
+            <ul class="hero__proof" role="list">
+              <li><strong data-i18n="hero.proof1Number">+100</strong> <span data-i18n="hero.proof1Label">alunos</span></li>
+              <li><strong data-i18n="hero.proof2Number">5★</strong> <span data-i18n="hero.proof2Label">avaliação</span></li>
+              <li><strong data-i18n="hero.proof3Number">CREF</strong> <span data-i18n="hero.proof3Label">registrada</span></li>
+            </ul>
+          </div>
         </div>
+
         <figure class="hero__photo">
           <img
             src="images/hero.jpg"
@@ -142,97 +149,106 @@
       </div>
     </section>
 
-    <section id="about" class="section section--alt" aria-labelledby="about-heading">
-      <div class="container container--narrow">
-        <p class="section__eyebrow" data-i18n="about.eyebrow">Sobre</p>
-        <h2 id="about-heading" class="section__title" data-i18n="about.title">Treinar é cuidar de si — todo dia, do seu jeito.</h2>
-        <div class="prose">
-          <p data-i18n="about.p1">
-            Sou Flávia Ribeiro, personal trainer apaixonada por ajudar pessoas a redescobrirem o próprio corpo. Acredito que o melhor treino é aquele que cabe na sua vida — e que respeita seu ritmo, seus limites e seus objetivos reais.
-          </p>
-          <p data-i18n="about.p2">
-            Trabalho com avaliações detalhadas, planejamento individualizado e acompanhamento constante. Cada plano é construído de acordo com a sua rotina, sua história e o resultado que você quer alcançar. Sem fórmula mágica, sem atalho — só método, presença e consistência.
-          </p>
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <header class="section__head">
+          <div>
+            <p class="section-number">01</p>
+            <p class="section-eyebrow" data-i18n="about.eyebrow">Sobre</p>
+          </div>
+          <h2 id="about-heading" class="section__title" data-i18n="about.title">Treinar é cuidar de si — todo dia, do seu jeito.</h2>
+        </header>
+        <div class="prose-grid">
+          <div></div>
+          <div class="prose">
+            <p data-i18n="about.p1">Sou Flávia Ribeiro, personal trainer apaixonada por ajudar pessoas a redescobrirem o próprio corpo. Acredito que o melhor treino é aquele que cabe na sua vida — e que respeita seu ritmo, seus limites e seus objetivos reais.</p>
+            <p data-i18n="about.p2">Trabalho com avaliações detalhadas, planejamento individualizado e acompanhamento constante. Cada plano é construído de acordo com a sua rotina, sua história e o resultado que você quer alcançar. Sem fórmula mágica, sem atalho — só método, presença e consistência.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="services" class="section" aria-labelledby="services-heading">
       <div class="container">
-        <p class="section__eyebrow" data-i18n="services.eyebrow">Como posso te ajudar</p>
-        <h2 id="services-heading" class="section__title" data-i18n="services.title">Serviços</h2>
+        <header class="section__head">
+          <div>
+            <p class="section-number">02</p>
+            <p class="section-eyebrow" data-i18n="services.eyebrow">Serviços</p>
+          </div>
+          <h2 id="services-heading" class="section__title" data-i18n="services.title">Como posso te ajudar.</h2>
+        </header>
 
-        <ul class="service-grid" role="list">
-          <li class="service-card">
-            <h3 class="service-card__title" data-i18n="services.s1Title">Treino presencial 1-a-1</h3>
-            <p class="service-card__body" data-i18n="services.s1Body">
-              Atendimento individual em estúdio ou domicílio. Avaliação completa, plano periodizado e progressão acompanhada de perto, sessão a sessão.
-            </p>
-            <p class="service-card__meta">
-              <span class="tag" data-i18n="services.s1Tag1">Presencial</span>
-              <span class="tag" data-i18n="services.s1Tag2">Individualizado</span>
-            </p>
+        <ul class="service-rows" role="list">
+          <li>
+            <div class="service-row">
+              <p class="service-row__num">01</p>
+              <h3 class="service-row__title" data-i18n="services.s1Title">Treino presencial 1-a-1</h3>
+              <p class="service-row__body" data-i18n="services.s1Body">Atendimento individual em estúdio ou domicílio. Avaliação completa, plano periodizado e progressão acompanhada de perto, sessão a sessão.</p>
+              <p class="service-row__meta">
+                <span class="tag" data-i18n="services.s1Tag1">Presencial</span>
+                <span class="tag" data-i18n="services.s1Tag2">Individual</span>
+              </p>
+            </div>
           </li>
 
-          <li class="service-card service-card--featured">
-            <p class="service-card__badge" data-i18n="services.s2Badge">Mais procurado</p>
-            <h3 class="service-card__title" data-i18n="services.s2Title">Programa online</h3>
-            <p class="service-card__body" data-i18n="services.s2Body">
-              Plano completo entregue pelo aplicativo, com vídeos, ajustes semanais e contato direto comigo. Para quem treina em casa, na academia ou viajando.
-            </p>
-            <p class="service-card__meta">
-              <span class="tag" data-i18n="services.s2Tag1">Online</span>
-              <span class="tag" data-i18n="services.s2Tag2">Flexível</span>
-            </p>
+          <li>
+            <p class="service-row__badge" data-i18n="services.s2Badge">Mais procurado</p>
+            <div class="service-row">
+              <p class="service-row__num">02</p>
+              <h3 class="service-row__title" data-i18n="services.s2Title">Programa online</h3>
+              <p class="service-row__body" data-i18n="services.s2Body">Plano completo entregue pelo aplicativo, com vídeos, ajustes semanais e contato direto comigo. Para quem treina em casa, na academia ou viajando.</p>
+              <p class="service-row__meta">
+                <span class="tag" data-i18n="services.s2Tag1">Online</span>
+                <span class="tag" data-i18n="services.s2Tag2">Flexível</span>
+              </p>
+            </div>
           </li>
 
-          <li class="service-card">
-            <h3 class="service-card__title" data-i18n="services.s3Title">Pequeno grupo</h3>
-            <p class="service-card__body" data-i18n="services.s3Body">
-              Treinos em duplas ou trios — para amigos, casais ou família. Mais energia, mais constância, e um custo amigável por pessoa.
-            </p>
-            <p class="service-card__meta">
-              <span class="tag" data-i18n="services.s3Tag1">2–3 pessoas</span>
-              <span class="tag" data-i18n="services.s3Tag2">Energia</span>
-            </p>
+          <li>
+            <div class="service-row">
+              <p class="service-row__num">03</p>
+              <h3 class="service-row__title" data-i18n="services.s3Title">Pequeno grupo</h3>
+              <p class="service-row__body" data-i18n="services.s3Body">Treinos em duplas ou trios — para amigos, casais ou família. Mais energia, mais constância, e um custo amigável por pessoa.</p>
+              <p class="service-row__meta">
+                <span class="tag" data-i18n="services.s3Tag1">2–3 pessoas</span>
+                <span class="tag" data-i18n="services.s3Tag2">Energia</span>
+              </p>
+            </div>
           </li>
         </ul>
       </div>
     </section>
 
-    <section id="method" class="section section--alt" aria-labelledby="method-heading">
+    <section id="method" class="section" aria-labelledby="method-heading">
       <div class="container">
-        <p class="section__eyebrow" data-i18n="method.eyebrow">Método</p>
-        <h2 id="method-heading" class="section__title" data-i18n="method.title">Como a gente trabalha</h2>
+        <header class="section__head">
+          <div>
+            <p class="section-number">03</p>
+            <p class="section-eyebrow" data-i18n="method.eyebrow">Método</p>
+          </div>
+          <h2 id="method-heading" class="section__title" data-i18n="method.title">Como a gente trabalha.</h2>
+        </header>
 
-        <ol class="method-steps" role="list">
+        <ol class="method-grid" role="list">
           <li>
-            <span class="method-steps__num" aria-hidden="true">01</span>
-            <h3 class="method-steps__title" data-i18n="method.s1Title">Avaliação</h3>
-            <p class="method-steps__body" data-i18n="method.s1Body">
-              Conversa inicial, anamnese, testes funcionais e leitura honesta de onde você está hoje — sem julgamento.
-            </p>
+            <p class="method-grid__num">01</p>
+            <h3 class="method-grid__title" data-i18n="method.s1Title">Avaliação</h3>
+            <p class="method-grid__body" data-i18n="method.s1Body">Conversa inicial, anamnese, testes funcionais e leitura honesta de onde você está hoje — sem julgamento.</p>
           </li>
           <li>
-            <span class="method-steps__num" aria-hidden="true">02</span>
-            <h3 class="method-steps__title" data-i18n="method.s2Title">Planejamento</h3>
-            <p class="method-steps__body" data-i18n="method.s2Body">
-              Plano construído sob medida, com objetivos claros por ciclo. Cada exercício tem um porquê.
-            </p>
+            <p class="method-grid__num">02</p>
+            <h3 class="method-grid__title" data-i18n="method.s2Title">Planejamento</h3>
+            <p class="method-grid__body" data-i18n="method.s2Body">Plano construído sob medida, com objetivos claros por ciclo. Cada exercício tem um porquê.</p>
           </li>
           <li>
-            <span class="method-steps__num" aria-hidden="true">03</span>
-            <h3 class="method-steps__title" data-i18n="method.s3Title">Execução</h3>
-            <p class="method-steps__body" data-i18n="method.s3Body">
-              Treinos com técnica, presença e ajuste fino. Erro vira aprendizado; constância vira progresso.
-            </p>
+            <p class="method-grid__num">03</p>
+            <h3 class="method-grid__title" data-i18n="method.s3Title">Execução</h3>
+            <p class="method-grid__body" data-i18n="method.s3Body">Treinos com técnica, presença e ajuste fino. Erro vira aprendizado; constância vira progresso.</p>
           </li>
           <li>
-            <span class="method-steps__num" aria-hidden="true">04</span>
-            <h3 class="method-steps__title" data-i18n="method.s4Title">Revisão</h3>
-            <p class="method-steps__body" data-i18n="method.s4Body">
-              Reavaliação periódica para celebrar o que avançou e ajustar o que precisa. Resultado que dura é resultado revisado.
-            </p>
+            <p class="method-grid__num">04</p>
+            <h3 class="method-grid__title" data-i18n="method.s4Title">Revisão</h3>
+            <p class="method-grid__body" data-i18n="method.s4Body">Reavaliação periódica para celebrar o que avançou e ajustar o que precisa. Resultado que dura é resultado revisado.</p>
           </li>
         </ol>
       </div>
@@ -240,8 +256,13 @@
 
     <section id="gallery" class="section" aria-labelledby="gallery-heading">
       <div class="container">
-        <p class="section__eyebrow" data-i18n="gallery.eyebrow">Galeria</p>
-        <h2 id="gallery-heading" class="section__title" data-i18n="gallery.title">Treino em ação</h2>
+        <header class="section__head">
+          <div>
+            <p class="section-number">04</p>
+            <p class="section-eyebrow" data-i18n="gallery.eyebrow">Galeria</p>
+          </div>
+          <h2 id="gallery-heading" class="section__title" data-i18n="gallery.title">Treino em ação.</h2>
+        </header>
 
         <ul class="gallery-grid" role="list">
           <li>
@@ -270,30 +291,32 @@
       </div>
     </section>
 
-    <section id="contact" class="section section--alt" aria-labelledby="contact-heading">
-      <div class="container container--narrow">
-        <p class="section__eyebrow" data-i18n="contact.eyebrow">Vamos conversar</p>
-        <h2 id="contact-heading" class="section__title" data-i18n="contact.title">Pronto para começar?</h2>
-        <p class="prose" data-i18n="contact.p1">
-          Conta um pouco sobre você, sua rotina e seus objetivos. Respondo em até 24 horas — sempre.
-        </p>
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <header class="section__head">
+          <div>
+            <p class="section-number">05</p>
+            <p class="section-eyebrow" data-i18n="contact.eyebrow">Contato</p>
+          </div>
+          <div>
+            <h2 id="contact-heading" class="contact-prompt" data-i18n="contact.title">Pronto para <em>começar?</em></h2>
+            <p class="contact-prose" data-i18n="contact.p1">Conta um pouco sobre você, sua rotina e seus objetivos. Respondo em até 24 horas — sempre.</p>
+          </div>
+        </header>
+
         <ul class="link-list" role="list">
           <li>
-            <a href="https://wa.me/17543263220" rel="noopener" id="whatsapp-link">
+            <a href="https://wa.me/17543263220" rel="noopener">
               <span class="link-list__label" data-i18n="contact.whatsappLabel">WhatsApp</span>
-              <span class="link-list__value" data-i18n="contact.whatsappValue">+1 754 326 3220</span>
+              <span class="link-list__value">+1 754 326 3220</span>
+              <span class="link-list__arrow" aria-hidden="true">→</span>
             </a>
           </li>
           <li>
             <a href="https://www.instagram.com/_flaviaa.ribeiro_/" rel="noopener">
               <span class="link-list__label" data-i18n="contact.igLabel">Instagram</span>
               <span class="link-list__value">@_flaviaa.ribeiro_</span>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:" id="email-link">
-              <span class="link-list__label" data-i18n="contact.emailLabel">E-mail</span>
-              <span class="link-list__value" data-i18n="contact.emailValue">contato@flaribeiro.com</span>
+              <span class="link-list__arrow" aria-hidden="true">→</span>
             </a>
           </li>
         </ul>
@@ -304,9 +327,9 @@
 
   <footer class="site-footer">
     <div class="container site-footer__inner">
-      <p>© <span id="year">2026</span> Flávia Ribeiro. <span data-i18n="footer.rights">Todos os direitos reservados.</span></p>
+      <p>© <span id="year">2026</span> Flávia Ribeiro</p>
       <p>
-        <a href="#main" data-i18n="footer.toTop">Voltar ao topo</a>
+        <a href="#main" data-i18n="footer.toTop">↑ Topo</a>
       </p>
     </div>
   </footer>
