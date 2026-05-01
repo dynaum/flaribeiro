@@ -29,6 +29,7 @@
       'hero.proof2Label': 'avaliação média',
       'hero.proof3Number': 'CREF',
       'hero.proof3Label': 'profissional registrada',
+      'hero.photoAlt': 'Flávia Ribeiro, personal trainer, sorrindo com os braços cruzados',
 
       'about.eyebrow': 'Sobre',
       'about.title': 'Treinar é cuidar de si — todo dia, do seu jeito.',
@@ -64,6 +65,9 @@
 
       'gallery.eyebrow': 'Galeria',
       'gallery.title': 'Treino em ação',
+      'gallery.alt1': 'Flávia Ribeiro fazendo rosca direta com anilha',
+      'gallery.alt2': 'Flávia Ribeiro em posição de afundo sobre um step',
+      'gallery.alt3': 'Flávia Ribeiro sentada ao lado de halteres e kettlebell',
       'gallery.igLink': 'Mais no Instagram <span aria-hidden="true">→</span>',
 
       'contact.eyebrow': 'Vamos conversar',
@@ -104,6 +108,7 @@
       'hero.proof2Label': 'average rating',
       'hero.proof3Number': 'CREF',
       'hero.proof3Label': 'certified professional',
+      'hero.photoAlt': 'Flávia Ribeiro, personal trainer, smiling with arms crossed',
 
       'about.eyebrow': 'About',
       'about.title': 'Training is daily care for yourself — your way.',
@@ -139,6 +144,9 @@
 
       'gallery.eyebrow': 'Gallery',
       'gallery.title': 'Training in motion',
+      'gallery.alt1': 'Flávia Ribeiro performing a single-arm dumbbell curl',
+      'gallery.alt2': 'Flávia Ribeiro in a forward lunge on a step platform',
+      'gallery.alt3': 'Flávia Ribeiro seated next to dumbbells and a kettlebell',
       'gallery.igLink': 'More on Instagram <span aria-hidden="true">→</span>',
 
       'contact.eyebrow': "Let's talk",

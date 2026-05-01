@@ -65,38 +65,38 @@ a:hover { text-decoration-color: var(--c-accent); }
 }
 
 /* ============================================================================
-   Theme tokens — warm cream + deep umber + terracotta accent
+   Theme tokens — warm cream + deep forest accent (matches her gym aesthetic)
 ============================================================================ */
 
 :root,
 [data-theme='light'] {
-  --c-bg:             #faf6ee;
-  --c-bg-alt:         #f1ecdf;
+  --c-bg:             #fbf6ea;
+  --c-bg-alt:         #f1ecdb;
   --c-surface:        #ffffff;
-  --c-text:           #1f1d18;
-  --c-text-muted:     #5a554a;
-  --c-border:         #e2dccd;
-  --c-border-strong:  #c9c1ad;
-  --c-accent:         #a64430;   /* terracotta, ~5.7:1 on bg — passes AA normal */
-  --c-accent-strong:  #7a3022;
-  --c-accent-soft:    rgba(166, 68, 48, 0.20);
-  --c-focus:          #7a3022;
-  --c-shadow:         0 1px 2px rgba(60, 40, 20, 0.04),
-                      0 12px 32px -16px rgba(60, 40, 20, 0.18);
+  --c-text:           #131915;
+  --c-text-muted:     #585c52;
+  --c-border:         #e1ddca;
+  --c-border-strong:  #c5beac;
+  --c-accent:         #2f5d4a;   /* deep forest, matches her training wear, ~6.6:1 on bg */
+  --c-accent-strong:  #1d4334;
+  --c-accent-soft:    rgba(47, 93, 74, 0.20);
+  --c-focus:          #1d4334;
+  --c-shadow:         0 1px 2px rgba(20, 30, 24, 0.04),
+                      0 12px 32px -16px rgba(20, 30, 24, 0.18);
 }
 
 [data-theme='dark'] {
-  --c-bg:             #1a1814;
-  --c-bg-alt:         #23201a;
-  --c-surface:        #2a261f;
-  --c-text:           #f5f0e3;
-  --c-text-muted:     #b0a896;
-  --c-border:         #3a342b;
-  --c-border-strong:  #4d473c;
-  --c-accent:         #e08060;   /* lighter terracotta for dark — ~7.4:1 */
-  --c-accent-strong:  #f0a080;
-  --c-accent-soft:    rgba(224, 128, 96, 0.22);
-  --c-focus:          #e08060;
+  --c-bg:             #0f1614;
+  --c-bg-alt:         #161e1a;
+  --c-surface:        #1c2521;
+  --c-text:           #f1ede0;
+  --c-text-muted:     #a8a795;
+  --c-border:         #2a322d;
+  --c-border-strong:  #3c463f;
+  --c-accent:         #6ba78d;   /* sage glow for dark, ~7.5:1 */
+  --c-accent-strong:  #8bc1a8;
+  --c-accent-soft:    rgba(107, 167, 141, 0.22);
+  --c-focus:          #6ba78d;
   --c-shadow:         0 1px 2px rgba(0, 0, 0, 0.5),
                       0 12px 32px -16px rgba(0, 0, 0, 0.65);
 }
@@ -332,6 +332,17 @@ a:hover { text-decoration-color: var(--c-accent); }
 .hero__photo {
   margin: 0;
   position: relative;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: var(--c-shadow);
+  background: var(--c-bg-alt);
+  aspect-ratio: 4 / 5;
+}
+.hero__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* ============================================================================
@@ -604,8 +615,8 @@ a:hover { text-decoration-color: var(--c-accent); }
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.75rem;
+  grid-template-columns: 1fr;
+  gap: 1rem;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -614,13 +625,53 @@ a:hover { text-decoration-color: var(--c-accent); }
 @media (min-width: 640px) {
   .gallery-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
+    gap: 1.25rem;
+    grid-auto-rows: 1fr;
   }
 }
 
-.gallery-grid li { display: contents; }
-.gallery-grid .photo-placeholder { aspect-ratio: 1 / 1; border-radius: 0.875rem; }
-.gallery-grid .photo-placeholder__monogram { font-size: 2rem; }
+.gallery-grid li {
+  margin: 0;
+  padding: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: var(--c-bg-alt);
+  aspect-ratio: 4 / 5;
+  box-shadow: var(--c-shadow);
+  transition: transform 200ms ease;
+}
+.gallery-grid li:hover { transform: translateY(-3px); }
+.gallery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* When using real photos: third item is landscape and spans 2 cols on desktop */
+.gallery-grid:not(.gallery-grid--placeholder) li:nth-child(3) { /* real-photo layout */ }
+@media (min-width: 880px) {
+  .gallery-grid:not(.gallery-grid--placeholder) li:nth-child(3) {
+    grid-column: span 2;
+    aspect-ratio: 16 / 10;
+  }
+}
+
+/* Placeholder mode: 6 items in 2 (mobile) / 3 (desktop) columns, square */
+.gallery-grid--placeholder {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+@media (min-width: 640px) {
+  .gallery-grid--placeholder { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+}
+.gallery-grid--placeholder li {
+  display: contents;
+}
+.gallery-grid--placeholder .photo-placeholder {
+  aspect-ratio: 1 / 1;
+  border-radius: 0.875rem;
+}
+.gallery-grid--placeholder .photo-placeholder__monogram { font-size: 2rem; }
 
 /* ============================================================================
    Link list (Contact)
