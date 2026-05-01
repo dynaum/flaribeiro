@@ -296,7 +296,6 @@ a {
   position: relative;
   padding-top: 4.25rem; /* push past fixed header */
   padding-bottom: clamp(3rem, 6vw, 5rem);
-  overflow: hidden;
 }
 
 .hero__grid {
@@ -308,8 +307,9 @@ a {
 
 @media (min-width: 880px) {
   .hero__grid {
-    grid-template-columns: 1.15fr 1fr;
-    gap: 0;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 4rem;
+    align-items: center;
     min-height: calc(100vh - 4.25rem);
   }
 }
@@ -373,29 +373,38 @@ a {
   position: relative;
   margin: 0;
   aspect-ratio: 4 / 5;
-  overflow: hidden;
   background: var(--c-bg-soft);
 }
 
-@media (min-width: 880px) {
-  .hero__photo {
-    aspect-ratio: auto;
-    margin-right: calc(-1 * (50vw - 42rem));    /* bleed past container right edge */
-    margin-top: -4.25rem;                        /* bleed up under fixed header */
-  }
-}
-
-@media (min-width: 1280px) {
-  .hero__photo {
-    margin-right: calc(-1 * (50vw - 42rem));
-  }
+/* Decorative accent block behind the photo — offset for editorial feel */
+.hero__photo::before {
+  content: '';
+  position: absolute;
+  inset: 1.25rem -1.25rem -1.25rem 1.25rem;
+  background: var(--c-accent);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .hero__photo img {
+  position: relative;
+  z-index: 1;
   width: 100%; height: 100%;
   object-fit: cover;
   object-position: center 20%;
   display: block;
+}
+
+@media (min-width: 880px) {
+  .hero__photo {
+    width: 100%;
+    max-width: 32rem;          /* ≈ 512px — keeps the 684px source from upscaling */
+    margin: 0 0 0 auto;        /* right-aligned in its grid column */
+    aspect-ratio: 4 / 5;
+  }
+  .hero__photo::before {
+    inset: 1.75rem -1.75rem -1.75rem 1.75rem;
+  }
 }
 
 /* Marquee at bottom of hero */
