@@ -18,7 +18,7 @@
       'aria.langToggle': 'Trocar para inglês',
       'aria.themeToggle': 'Mudar para tema escuro',
 
-      'hero.stamp': '00 / Personal Trainer · Brasil',
+      'hero.stamp': '00 / Personal Trainer · Boca Raton, FL',
       'hero.titleL1': 'Movimento',
       'hero.titleL2': 'com',
       'hero.titleL3': 'propósito.',
@@ -97,7 +97,7 @@
       'aria.langToggle': 'Switch to Portuguese',
       'aria.themeToggle': 'Switch to dark theme',
 
-      'hero.stamp': '00 / Personal Trainer · Brazil',
+      'hero.stamp': '00 / Personal Trainer · Boca Raton, FL',
       'hero.titleL1': 'Movement',
       'hero.titleL2': 'with',
       'hero.titleL3': 'purpose.',
