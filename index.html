@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.title">Flávia Ribeiro — Personal Trainer</title>
+  <meta name="description" content="Flávia Ribeiro — personal trainer. Treinos presenciais e online, com método e acompanhamento próximo." data-i18n="meta.description" data-i18n-attr="content">
+  <meta name="author" content="Flávia Ribeiro">
+  <meta name="theme-color" content="#faf6ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1a1814" media="(prefers-color-scheme: dark)">
+
+  <meta property="og:title" content="Flávia Ribeiro — Personal Trainer" data-i18n="meta.title" data-i18n-attr="content">
+  <meta property="og:description" content="Treinos presenciais e online, com método e acompanhamento próximo." data-i18n="meta.ogDescription" data-i18n-attr="content">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://flaribeiro.com.br/">
+
+  <link rel="canonical" href="https://flaribeiro.com.br/">
+  <link rel="alternate" hreflang="pt-BR" href="https://flaribeiro.com.br/">
+  <link rel="alternate" hreflang="en" href="https://flaribeiro.com.br/?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://flaribeiro.com.br/">
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles.css">
+
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('lang');
+        var url = new URLSearchParams(location.search);
+        var fromUrl = url.get('lang');
+        var browser = (navigator.language || '').toLowerCase().startsWith('en') ? 'en' : 'pt-BR';
+        var lang = fromUrl || saved || browser;
+        if (lang !== 'en' && lang !== 'pt-BR') lang = 'pt-BR';
+        document.documentElement.lang = lang;
+      } catch (e) {}
+      try {
+        var t = localStorage.getItem('theme');
+        var d = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = t || (d ? 'dark' : 'light');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="/" aria-label="Flávia Ribeiro — home">
+        <span class="brand__mark" aria-hidden="true">FR</span>
+        <span class="brand__name">Flávia Ribeiro</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#about" data-i18n="nav.about">Sobre</a>
+        <a href="#services" data-i18n="nav.services">Serviços</a>
+        <a href="#method" data-i18n="nav.method">Método</a>
+        <a href="#contact" data-i18n="nav.contact">Contato</a>
+      </nav>
+      <div class="site-header__actions">
+        <button
+          type="button"
+          class="lang-toggle"
+          id="lang-toggle"
+          aria-label="Trocar para inglês"
+          data-i18n-attr="aria-label"
+          data-i18n="aria.langToggle"
+        >
+          <span aria-hidden="true" id="lang-toggle-label">EN</span>
+        </button>
+        <button
+          type="button"
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Mudar para tema escuro"
+          data-i18n-attr="aria-label"
+          data-i18n="aria.themeToggle"
+          aria-pressed="false"
+        >
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="4" fill="currentColor"/>
+            <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="12" y1="2"  x2="12" y2="5"/>
+              <line x1="12" y1="19" x2="12" y2="22"/>
+              <line x1="2"  y1="12" x2="5"  y2="12"/>
+              <line x1="19" y1="12" x2="22" y2="12"/>
+              <line x1="4.9" y1="4.9"   x2="7"    y2="7"/>
+              <line x1="17"  y1="17"    x2="19.1" y2="19.1"/>
+              <line x1="4.9" y1="19.1"  x2="7"    y2="17"/>
+              <line x1="17"  y1="7"     x2="19.1" y2="4.9"/>
+            </g>
+          </svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="currentColor"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Personal trainer · Brasil</p>
+          <h1 class="hero__title" data-i18n="hero.title">
+            Movimento com <em>propósito</em>.
+          </h1>
+          <p class="hero__lede" data-i18n="hero.lede">
+            Treinos presenciais e online desenhados para você — com método, acompanhamento próximo e foco no que importa: resultado que dura.
+          </p>
+          <div class="hero__ctas">
+            <a class="button button--primary" href="#contact" data-i18n="hero.cta1">Agende uma conversa</a>
+            <a class="button button--ghost" href="#services" data-i18n="hero.cta2">Ver serviços</a>
+          </div>
+          <ul class="hero__proof" role="list">
+            <li><strong data-i18n="hero.proof1Number">+100</strong> <span data-i18n="hero.proof1Label">alunos atendidos</span></li>
+            <li><strong data-i18n="hero.proof2Number">5★</strong> <span data-i18n="hero.proof2Label">avaliação média</span></li>
+            <li><strong data-i18n="hero.proof3Number">CREF</strong> <span data-i18n="hero.proof3Label">profissional registrada</span></li>
+          </ul>
+        </div>
+        <figure class="hero__photo" aria-label="Flávia Ribeiro">
+          <div class="photo-placeholder photo-placeholder--portrait" aria-hidden="true">
+            <span class="photo-placeholder__monogram">FR</span>
+          </div>
+          <figcaption class="visually-hidden">Flávia Ribeiro, personal trainer.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="about" class="section section--alt" aria-labelledby="about-heading">
+      <div class="container container--narrow">
+        <p class="section__eyebrow" data-i18n="about.eyebrow">Sobre</p>
+        <h2 id="about-heading" class="section__title" data-i18n="about.title">Treinar é cuidar de si — todo dia, do seu jeito.</h2>
+        <div class="prose">
+          <p data-i18n="about.p1">
+            Sou Flávia Ribeiro, personal trainer apaixonada por ajudar pessoas a redescobrirem o próprio corpo. Acredito que o melhor treino é aquele que cabe na sua vida — e que respeita seu ritmo, seus limites e seus objetivos reais.
+          </p>
+          <p data-i18n="about.p2">
+            Trabalho com avaliações detalhadas, planejamento individualizado e acompanhamento constante. Cada plano é construído de acordo com a sua rotina, sua história e o resultado que você quer alcançar. Sem fórmula mágica, sem atalho — só método, presença e consistência.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section" aria-labelledby="services-heading">
+      <div class="container">
+        <p class="section__eyebrow" data-i18n="services.eyebrow">Como posso te ajudar</p>
+        <h2 id="services-heading" class="section__title" data-i18n="services.title">Serviços</h2>
+
+        <ul class="service-grid" role="list">
+          <li class="service-card">
+            <h3 class="service-card__title" data-i18n="services.s1Title">Treino presencial 1-a-1</h3>
+            <p class="service-card__body" data-i18n="services.s1Body">
+              Atendimento individual em estúdio ou domicílio. Avaliação completa, plano periodizado e progressão acompanhada de perto, sessão a sessão.
+            </p>
+            <p class="service-card__meta">
+              <span class="tag" data-i18n="services.s1Tag1">Presencial</span>
+              <span class="tag" data-i18n="services.s1Tag2">Individualizado</span>
+            </p>
+          </li>
+
+          <li class="service-card service-card--featured">
+            <p class="service-card__badge" data-i18n="services.s2Badge">Mais procurado</p>
+            <h3 class="service-card__title" data-i18n="services.s2Title">Programa online</h3>
+            <p class="service-card__body" data-i18n="services.s2Body">
+              Plano completo entregue pelo aplicativo, com vídeos, ajustes semanais e contato direto comigo. Para quem treina em casa, na academia ou viajando.
+            </p>
+            <p class="service-card__meta">
+              <span class="tag" data-i18n="services.s2Tag1">Online</span>
+              <span class="tag" data-i18n="services.s2Tag2">Flexível</span>
+            </p>
+          </li>
+
+          <li class="service-card">
+            <h3 class="service-card__title" data-i18n="services.s3Title">Pequeno grupo</h3>
+            <p class="service-card__body" data-i18n="services.s3Body">
+              Treinos em duplas ou trios — para amigos, casais ou família. Mais energia, mais constância, e um custo amigável por pessoa.
+            </p>
+            <p class="service-card__meta">
+              <span class="tag" data-i18n="services.s3Tag1">2–3 pessoas</span>
+              <span class="tag" data-i18n="services.s3Tag2">Energia</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="method" class="section section--alt" aria-labelledby="method-heading">
+      <div class="container">
+        <p class="section__eyebrow" data-i18n="method.eyebrow">Método</p>
+        <h2 id="method-heading" class="section__title" data-i18n="method.title">Como a gente trabalha</h2>
+
+        <ol class="method-steps" role="list">
+          <li>
+            <span class="method-steps__num" aria-hidden="true">01</span>
+            <h3 class="method-steps__title" data-i18n="method.s1Title">Avaliação</h3>
+            <p class="method-steps__body" data-i18n="method.s1Body">
+              Conversa inicial, anamnese, testes funcionais e leitura honesta de onde você está hoje — sem julgamento.
+            </p>
+          </li>
+          <li>
+            <span class="method-steps__num" aria-hidden="true">02</span>
+            <h3 class="method-steps__title" data-i18n="method.s2Title">Planejamento</h3>
+            <p class="method-steps__body" data-i18n="method.s2Body">
+              Plano construído sob medida, com objetivos claros por ciclo. Cada exercício tem um porquê.
+            </p>
+          </li>
+          <li>
+            <span class="method-steps__num" aria-hidden="true">03</span>
+            <h3 class="method-steps__title" data-i18n="method.s3Title">Execução</h3>
+            <p class="method-steps__body" data-i18n="method.s3Body">
+              Treinos com técnica, presença e ajuste fino. Erro vira aprendizado; constância vira progresso.
+            </p>
+          </li>
+          <li>
+            <span class="method-steps__num" aria-hidden="true">04</span>
+            <h3 class="method-steps__title" data-i18n="method.s4Title">Revisão</h3>
+            <p class="method-steps__body" data-i18n="method.s4Body">
+              Reavaliação periódica para celebrar o que avançou e ajustar o que precisa. Resultado que dura é resultado revisado.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="gallery" class="section" aria-labelledby="gallery-heading">
+      <div class="container">
+        <p class="section__eyebrow" data-i18n="gallery.eyebrow">Galeria</p>
+        <h2 id="gallery-heading" class="section__title" data-i18n="gallery.title">Treino em ação</h2>
+
+        <ul class="gallery-grid" role="list">
+          <li><div class="photo-placeholder" aria-hidden="true"><span class="photo-placeholder__monogram">FR</span></div></li>
+          <li><div class="photo-placeholder photo-placeholder--alt" aria-hidden="true"><span class="photo-placeholder__monogram">FR</span></div></li>
+          <li><div class="photo-placeholder" aria-hidden="true"><span class="photo-placeholder__monogram">FR</span></div></li>
+          <li><div class="photo-placeholder photo-placeholder--alt" aria-hidden="true"><span class="photo-placeholder__monogram">FR</span></div></li>
+          <li><div class="photo-placeholder" aria-hidden="true"><span class="photo-placeholder__monogram">FR</span></div></li>
+          <li><div class="photo-placeholder photo-placeholder--alt" aria-hidden="true"><span class="photo-placeholder__monogram">FR</span></div></li>
+        </ul>
+
+        <p class="section__footnote">
+          <a href="https://www.instagram.com/_flaviaa.ribeiro_/" rel="noopener" data-i18n="gallery.igLink">Mais no Instagram <span aria-hidden="true">→</span></a>
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--alt" aria-labelledby="contact-heading">
+      <div class="container container--narrow">
+        <p class="section__eyebrow" data-i18n="contact.eyebrow">Vamos conversar</p>
+        <h2 id="contact-heading" class="section__title" data-i18n="contact.title">Pronto para começar?</h2>
+        <p class="prose" data-i18n="contact.p1">
+          Conta um pouco sobre você, sua rotina e seus objetivos. Respondo em até 24 horas — sempre.
+        </p>
+        <ul class="link-list" role="list">
+          <li>
+            <a href="https://wa.me/" rel="noopener" id="whatsapp-link">
+              <span class="link-list__label" data-i18n="contact.whatsappLabel">WhatsApp</span>
+              <span class="link-list__value" data-i18n="contact.whatsappValue">Mensagem direta</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/_flaviaa.ribeiro_/" rel="noopener">
+              <span class="link-list__label" data-i18n="contact.igLabel">Instagram</span>
+              <span class="link-list__value">@_flaviaa.ribeiro_</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:" id="email-link">
+              <span class="link-list__label" data-i18n="contact.emailLabel">E-mail</span>
+              <span class="link-list__value" data-i18n="contact.emailValue">contato@flaribeiro.com.br</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>© <span id="year">2026</span> Flávia Ribeiro. <span data-i18n="footer.rights">Todos os direitos reservados.</span></p>
+      <p>
+        <a href="#main" data-i18n="footer.toTop">Voltar ao topo</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
