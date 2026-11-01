@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://flaribeiro.com/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://flaribeiro.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaribeiro.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://flaribeiro.com/"/>
+    <image:image><image:loc>https://flaribeiro.com/images/hero-palco.jpg</image:loc></image:image>
+    <image:image><image:loc>https://flaribeiro.com/images/sobre-medalhas.jpg</image:loc></image:image>
+    <image:image><image:loc>https://flaribeiro.com/images/como-funciona-medalhas.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://flaribeiro.com/en/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://flaribeiro.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://flaribeiro.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://flaribeiro.com/"/>
+  </url>
+</urlset>

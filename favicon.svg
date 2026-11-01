@@ -1,7 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Flávia Ribeiro">
-  <rect width="64" height="64" fill="#f0e9d8"/>
-  <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle"
-        font-family="Fraunces, Georgia, serif"
-        font-style="italic" font-weight="500"
-        font-size="42" fill="#c43a1d">F</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Shine by Fla">
+  <circle cx="12" cy="12" r="12" fill="#8A2D4F"/>
+  <path fill="#FCEFF2" d="M11 4c.5 4 2 5.5 6 6-4 .5-5.500 2-6 6-.5-4-2-5.500-6-6 4-.5 5.500-2 6-6z"/>
+  <path fill="#FCEFF2" d="M17 14c.3 1.800.9 2.400 2.700 2.700-1.800.3-2.400.9-2.700 2.700-.3-1.800-.9-2.400-2.700-2.700 1.800-.3 2.400-.9 2.700-2.700z"/>
 </svg>

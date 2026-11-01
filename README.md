@@ -1,8 +1,8 @@
 # flaribeiro.com
 
-Personal site for Flávia Ribeiro, personal trainer. Bilingual (pt-BR / en),
-plain HTML / CSS / JS, no build step. Deployed on GitHub Pages at
-[flaribeiro.com](https://flaribeiro.com).
+Sales page for Shine by Fla, the 12-week coaching program by Flavia Ribeiro.
+Portuguese at `/` and English at `/en/`, plain HTML and CSS, no build step. The
+only JavaScript is Google Analytics and a redirect for old `?lang=en` links. Deployed on GitHub Pages at [flaribeiro.com](https://flaribeiro.com).
 
 ## Local preview
 
@@ -12,25 +12,17 @@ python3 -m http.server 8000
 
 ## Files
 
-- `index.html` — single page with all sections (hero, about, services, method, gallery, contact)
-- `styles.css` — design tokens via CSS custom properties; light + dark theme
-- `script.js` — `i18n` dictionary (pt-BR + en), language toggle, theme toggle, scroll affordance
-- `favicon.svg` — circular FR monogram in terracotta
-- `CNAME` — `flaribeiro.com`
-- `images/` — drop real photos here and update the `index.html` `photo-placeholder` blocks
+- `index.html`: Portuguese page (hero, pain points, how it works, gallery, coaching, about, plans, FAQ, final call)
+- `en/index.html`: English page. Keep copy, prices and structured data in sync with the Portuguese page
+- `styles.css`: design tokens via CSS custom properties, values from the design mockup
+- `favicon.svg`: sparkle mark on the brand color
+- `CNAME`: `flaribeiro.com`
+- `images/`: page photos
 
-## What's a placeholder
+## Content still missing
 
-The site ships with **photo placeholders** (radial-gradient panels with an "FR" monogram). Replace them with real images:
-
-1. Add `images/hero.jpg`, `images/gallery-1.jpg`, ..., `images/gallery-6.jpg`.
-2. In `index.html`, swap each `<div class="photo-placeholder">...</div>` for an `<img src="/images/...jpg" alt="..." width="..." height="...">` (give every image meaningful alt text in Portuguese).
-
-Also placeholder until Flávia confirms:
-- WhatsApp link in `#contact` (currently `https://wa.me/`) — fill in the international-format phone number.
-- Email link `mailto:` — fill in if she wants email.
-- Hero proof numbers (`+100 alunos`, `5★`, `CREF`) — adjust to the truth.
-- Body copy throughout — sensible drafts in both languages, but she should review and edit.
+- Testimonials: the "Elas começaram de onde você está" section sits in an HTML comment in `index.html`. Activate it once real, authorized testimonials exist.
+- Plan buttons open WhatsApp with a message naming the plan. Swap the `wa.me` links for checkout links if a payment page gets added.
 
 ## DNS
 
