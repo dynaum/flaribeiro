@@ -64,24 +64,23 @@
         "@id": "https://flaribeiro.com/#servico",
         "name": "Shine by Fla",
         "serviceType": "Consultoria de treino online",
-        "description": "Programa de 12 semanas com treino individual em vídeo, check-in e acompanhamento, em casa ou na academia.",
+        "description": "Assinatura mensal com treino individual em vídeo, check-in toda semana e acompanhamento, em casa ou na academia.",
         "url": "https://flaribeiro.com/",
         "image": "https://flaribeiro.com/images/hero-palco.jpg",
         "provider": { "@id": "https://flaribeiro.com/#flavia" },
         "offers": [
           {
             "@type": "Offer",
-            "name": "Essencial",
-            "price": "277.90",
-            "priceCurrency": "BRL",
-            "url": "https://flaribeiro.com/#planos"
-          },
-          {
-            "@type": "Offer",
             "name": "Acompanhamento",
-            "price": "417.90",
+            "price": "79.90",
             "priceCurrency": "BRL",
-            "url": "https://flaribeiro.com/#planos"
+            "url": "https://flaribeiro.com/#planos",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "79.90",
+              "priceCurrency": "BRL",
+              "unitCode": "MON"
+            }
           }
         ]
       },
@@ -93,9 +92,9 @@
           { "@type": "Question", "name": "Tenho pouco tempo. Funciona para mim?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Todo treino tem versão express, e o treino é por letra: perdeu um dia, segue de onde parou." } },
           { "@type": "Question", "name": "Preciso de academia?", "acceptedAnswer": { "@type": "Answer", "text": "Não. Monto o treino com o que você tem, em casa ou na academia." } },
           { "@type": "Question", "name": "Inclui dieta?", "acceptedAnswer": { "@type": "Answer", "text": "Você recebe orientações gerais de alimentação. Plano alimentar individual é feito por nutricionista." } },
-          { "@type": "Question", "name": "Nunca treinei. Posso entrar?", "acceptedAnswer": { "@type": "Answer", "text": "Pode. A ficha do dia 0 define o seu nível, e os vídeos mostram cada exercício." } },
+          { "@type": "Question", "name": "Nunca treinei. Posso entrar?", "acceptedAnswer": { "@type": "Answer", "text": "Pode. A ficha de anamnese define o seu nível, e os vídeos mostram cada exercício." } },
           { "@type": "Question", "name": "Como tiro dúvidas?", "acceptedAnswer": { "@type": "Answer", "text": "Pelo WhatsApp, de segunda a sexta. Pode mandar vídeo do exercício para eu corrigir." } },
-          { "@type": "Question", "name": "E depois das 12 semanas?", "acceptedAnswer": { "@type": "Answer", "text": "Na semana 10 conversamos sobre o próximo ciclo. Quem renova antes da semana 12 tem 10% de desconto." } }
+          { "@type": "Question", "name": "Tem fidelidade?", "acceptedAnswer": { "@type": "Answer", "text": "Não. A assinatura é mensal, com renovação automática, e você cancela quando quiser." } }
         ]
       }
     ]
@@ -128,7 +127,7 @@
   <div class="page">
 
     <header class="site-header">
-      <div class="promo"><span class="promo__tag">30% OFF</span>Turma fundadora do Shine by Fla · só 10 vagas</div>
+      <div class="promo"><span class="promo__tag">10% OFF</span>no 1º mês do Shine by Fla · R$ 79,90 por mês</div>
       <div class="site-header__bar">
         <a class="brand" href="#topo">
           <span class="brand__mark"><svg aria-hidden="true" width="22" height="22"><use href="#i-sparkles"/></svg></span>
@@ -218,11 +217,11 @@
           <div class="split__text split__text--wide stack-18">
             <p class="pill pill--light">COMO FUNCIONA</p>
             <h2>Do primeiro passo ao <span class="hl">primeiro treino</span> em até 3 dias</h2>
-            <p class="muted">Quatro passos, e o ciclo se repete a cada 4 semanas até você chegar onde quer.</p>
+            <p class="muted">Quatro passos, e a cada etapa concluída você recebe um treino novo até chegar onde quer.</p>
             <ol class="steps">
               <li class="step">
                 <span class="num">1</span>
-                <div><h3>Ficha do dia 0</h3><p>Sua rotina, objetivo, dores, fotos e medidas, mais uma chamada de 15 minutos.</p></div>
+                <div><h3>Ficha de anamnese</h3><p>Uma ficha focada em entender os seus desafios: rotina, objetivo, histórico, dores e o que já te fez desistir, com fotos e medidas iniciais.</p></div>
               </li>
               <li class="step">
                 <span class="num">2</span>
@@ -234,7 +233,7 @@
               </li>
               <li class="step">
                 <span class="num">4</span>
-                <div><h3>Novo treino a cada 4 semanas</h3><p>Comparo fotos e medidas com o dia 0 e monto o próximo bloco com o que funcionou para você.</p></div>
+                <div><h3>Novo treino a cada etapa concluída</h3><p>Cada etapa do programa dura de 4 a 8 semanas. Ao finalizar, comparo fotos e medidas com o início e monto o próximo treino com o que funcionou para você.</p></div>
               </li>
             </ol>
             <a class="btn btn--accent btn--inline" href="#planos">É isso que eu quero!</a>
@@ -253,11 +252,8 @@
             <img src="images/galeria-2.jpg" alt="Flavia mordendo a medalha, sorrindo" width="900" height="1350" style="object-position: center 25%" loading="lazy" decoding="async">
             <img class="rail__wide" src="images/galeria-3.jpg" alt="Flavia na comparação de palco" width="1800" height="1350" style="object-position: 78% center" loading="lazy" decoding="async">
             <img src="images/galeria-4.jpg" alt="Flavia em foto preto e branco no quintal" width="900" height="1350" style="object-position: center 40%" loading="lazy" decoding="async">
-            <img src="images/galeria-5.jpg" alt="Flavia em pose lateral no palco" width="1350" height="1800" style="object-position: center 35%" loading="lazy" decoding="async">
-            <img src="images/galeria-6.jpg" alt="Flavia sorrindo no palco" width="1350" height="1800" style="object-position: center 30%" loading="lazy" decoding="async">
             <img src="images/galeria-7.jpg" alt="Flavia em pose de costas no palco" width="1350" height="1800" style="object-position: center 35%" loading="lazy" decoding="async">
             <img src="images/galeria-8.jpg" alt="Flavia caminhando no palco" width="1350" height="1800" style="object-position: center 40%" loading="lazy" decoding="async">
-            <img src="images/galeria-9.jpg" alt="Flavia em pose frontal no palco" width="1350" height="1800" style="object-position: center 30%" loading="lazy" decoding="async">
           </div>
         </div>
       </section>
@@ -269,7 +265,7 @@
             <h2>No Time da Fla, <span class="hl-light">ninguém treina sozinha</span></h2>
             <p class="coach__lede">Toda semana eu vejo como foi a sua: treinos feitos, energia, sono, dores e o que atrapalhou. Se você sumir, eu percebo e vou atrás de você antes que desista.</p>
             <ul class="coach__list">
-              <li><svg aria-hidden="true" width="20" height="20"><use href="#i-check"/></svg><span>Resposta em até 24 horas: 1 vitória, 1 ajuste e o foco da semana</span></li>
+              <li><svg aria-hidden="true" width="20" height="20"><use href="#i-check"/></svg><span>Resposta em até 24 horas, com o ajuste da sua semana</span></li>
               <li><svg aria-hidden="true" width="20" height="20"><use href="#i-check"/></svg><span>Semana difícil? O treino vira versão express, sem culpa</span></li>
               <li><svg aria-hidden="true" width="20" height="20"><use href="#i-check"/></svg><span>WhatsApp de segunda a sexta para dúvidas e correção de execução</span></li>
             </ul>
@@ -284,7 +280,7 @@
             </div>
             <div class="reply">
               <p class="card-label">Exemplo · resposta da Fla</p>
-              <p>Vitória: carga nova no agachamento mesmo com os filhos doentes. Ajuste: nesta semana faça o treino C na versão express. Foco: dormir 30 minutos mais cedo duas noites.</p>
+              <p>Parabéns pela carga nova no agachamento, mesmo com os filhos doentes! Nesta semana faça o treino C na versão express e tente dormir 30 minutos mais cedo em duas noites.</p>
             </div>
           </div>
         </div>
@@ -338,49 +334,33 @@
 
       <section id="planos" class="plans">
         <div class="plans__head">
-          <p class="pill pill--soft">PLANOS DE 12 SEMANAS</p>
-          <h2>Escolha como entrar no <span class="hl">Time da Fla</span></h2>
-          <p><strong>Turma fundadora:</strong> 10 vagas com 30% de desconto, em troca do seu depoimento ao fim das 12 semanas.</p>
+          <p class="pill pill--soft">ASSINATURA MENSAL</p>
+          <h2>Entre para o <span class="hl">Time da Fla</span></h2>
+          <p>Primeiro mês com 10% de desconto. Renovação automática, sem fidelidade: você cancela quando quiser.</p>
         </div>
-        <div class="plans__grid">
-          <div class="plan">
-            <div>
-              <h3>Essencial</h3>
-              <p class="plan__for">Para quem já treina e quer direção</p>
-            </div>
-            <div>
-              <p class="plan__note"><s>R$ 397</s> na turma fundadora</p>
-              <p class="plan__price">R$ 277,90</p>
-              <p class="plan__note">por 12 semanas</p>
-            </div>
-            <ul class="plan__list">
-              <li>Treino individual com vídeos</li>
-              <li>Check-in a cada 2 semanas</li>
-              <li>Novo treino a cada 4 semanas</li>
-              <li>WhatsApp de segunda a sexta</li>
-              <li>Orientações gerais de alimentação</li>
-            </ul>
-            <a class="btn btn--soft btn--plan" href="https://wa.me/17543263220?text=Oi%20Fla!%20Quero%20entrar%20no%20Time%20da%20Fla%20com%20o%20plano%20Essencial." rel="noopener">Quero o Essencial</a>
-          </div>
+        <div class="plans__grid plans__grid--single">
           <div class="plan plan--featured">
-            <p class="plan__flag">Recomendado</p>
+            <p class="plan__flag">Plano Shine</p>
             <div>
               <h3>Acompanhamento</h3>
               <p class="plan__for">Para quem já desistiu antes e precisa de alguém junto</p>
             </div>
             <div>
-              <p class="plan__note"><s>R$ 597</s> na turma fundadora</p>
-              <p class="plan__price">R$ 417,90</p>
-              <p class="plan__note">por 12 semanas</p>
+              <p class="plan__note"><s>R$ 79,90</s></p>
+              <p class="plan__price">R$ 71,91</p>
+              <p class="plan__note">no primeiro mês, depois R$ 79,90 por mês</p>
             </div>
             <ul class="plan__list">
-              <li>Tudo do Essencial</li>
+              <li>Ficha de anamnese focada nos seus desafios</li>
+              <li>Treino individual com vídeos, em casa ou na academia</li>
               <li><strong>Check-in toda semana</strong> com resposta em até 24h</li>
-              <li>Chamada de 15 minutos a cada 4 semanas</li>
+              <li>Novo treino ao fim de cada etapa (4 a 8 semanas)</li>
+              <li>WhatsApp de segunda a sexta</li>
               <li>Grupo exclusivo do Time da Fla</li>
-              <li>Comparação de fotos e medidas com o dia 0</li>
+              <li>Orientações gerais de alimentação</li>
             </ul>
-            <a class="btn btn--accent btn--plan" href="https://wa.me/17543263220?text=Oi%20Fla!%20Quero%20entrar%20no%20Time%20da%20Fla%20com%20o%20plano%20Acompanhamento." rel="noopener">É isso que eu quero!</a>
+            <!-- Trocar pelo link de pagamento da assinatura quando o checkout estiver pronto. -->
+            <a class="btn btn--accent btn--plan" href="https://wa.me/17543263220?text=Oi%20Fla!%20Quero%20assinar%20o%20plano%20Acompanhamento%20do%20Time%20da%20Fla." rel="noopener">É isso que eu quero!</a>
           </div>
         </div>
         <div class="guarantee">
@@ -399,9 +379,9 @@
             <details><summary>Tenho pouco tempo. Funciona para mim?</summary><p>Sim. Todo treino tem versão express, e o treino é por letra: perdeu um dia, segue de onde parou.</p></details>
             <details><summary>Preciso de academia?</summary><p>Não. Monto o treino com o que você tem, em casa ou na academia.</p></details>
             <details><summary>Inclui dieta?</summary><p>Você recebe orientações gerais de alimentação. Plano alimentar individual é feito por nutricionista.</p></details>
-            <details><summary>Nunca treinei. Posso entrar?</summary><p>Pode. A ficha do dia 0 define o seu nível, e os vídeos mostram cada exercício.</p></details>
+            <details><summary>Nunca treinei. Posso entrar?</summary><p>Pode. A ficha de anamnese define o seu nível, e os vídeos mostram cada exercício.</p></details>
             <details><summary>Como tiro dúvidas?</summary><p>Pelo WhatsApp, de segunda a sexta. Pode mandar vídeo do exercício para eu corrigir.</p></details>
-            <details><summary>E depois das 12 semanas?</summary><p>Na semana 10 conversamos sobre o próximo ciclo. Quem renova antes da semana 12 tem 10% de desconto.</p></details>
+            <details><summary>Tem fidelidade?</summary><p>Não. A assinatura é mensal, com renovação automática, e você cancela quando quiser.</p></details>
           </div>
         </div>
       </section>
@@ -411,7 +391,7 @@
           <img src="images/cta-medalhas.jpg" alt="Flavia erguendo as medalhas em primeiro plano" width="900" height="1350" loading="lazy" decoding="async">
           <div class="final__copy">
             <h2>O seu depois ainda está <span class="hl-light">sendo construído</span></h2>
-            <p>São só 10 vagas na turma fundadora do Time da Fla. Garanta a sua ou comente VAGA no <a href="https://www.instagram.com/_flaviaa.ribeiro_/" rel="noopener">meu Instagram</a>.</p>
+            <p>Comece com 10% de desconto no primeiro mês. Garanta sua vaga ou comente VAGA no <a href="https://www.instagram.com/_flaviaa.ribeiro_/" rel="noopener">meu Instagram</a>.</p>
             <a class="btn btn--rose" href="#planos">Quero fazer parte do Time da Fla</a>
             <p class="final__ps"><strong>PS:</strong> eu também já recomecei muitas vezes. A diferença foi parar de procurar atalho e ter um plano que coubesse na minha vida. É isso que eu quero te entregar.</p>
           </div>

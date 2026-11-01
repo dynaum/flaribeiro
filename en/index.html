@@ -63,24 +63,23 @@
         "@id": "https://flaribeiro.com/en/#service",
         "name": "Shine by Fla",
         "serviceType": "Online training coaching",
-        "description": "12-week program with individual video workouts, check-ins and coaching, at home or at the gym.",
+        "description": "Monthly subscription with individual video workouts, weekly check-ins and coaching, at home or at the gym.",
         "url": "https://flaribeiro.com/en/",
         "image": "https://flaribeiro.com/images/hero-palco.jpg",
         "provider": { "@id": "https://flaribeiro.com/#flavia" },
         "offers": [
           {
             "@type": "Offer",
-            "name": "Essential",
-            "price": "277.90",
-            "priceCurrency": "BRL",
-            "url": "https://flaribeiro.com/en/#plans"
-          },
-          {
-            "@type": "Offer",
             "name": "Coaching",
-            "price": "417.90",
+            "price": "79.90",
             "priceCurrency": "BRL",
-            "url": "https://flaribeiro.com/en/#plans"
+            "url": "https://flaribeiro.com/en/#plans",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "79.90",
+              "priceCurrency": "BRL",
+              "unitCode": "MON"
+            }
           }
         ]
       },
@@ -92,9 +91,9 @@
           { "@type": "Question", "name": "I don't have much time. Will it work for me?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every workout has an express version, and workouts go by letter: miss a day and you pick up where you left off." } },
           { "@type": "Question", "name": "Do I need a gym?", "acceptedAnswer": { "@type": "Answer", "text": "No. I build your training around what you have, at home or at the gym." } },
           { "@type": "Question", "name": "Is a diet included?", "acceptedAnswer": { "@type": "Answer", "text": "You get general nutrition guidance. An individual meal plan comes from a nutritionist." } },
-          { "@type": "Question", "name": "I've never trained. Can I join?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Your day 0 form sets your level, and the videos show every exercise." } },
+          { "@type": "Question", "name": "I've never trained. Can I join?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Your intake form sets your level, and the videos show every exercise." } },
           { "@type": "Question", "name": "How do I ask questions?", "acceptedAnswer": { "@type": "Answer", "text": "On WhatsApp, Monday to Friday. You can send a video of an exercise for me to correct." } },
-          { "@type": "Question", "name": "What happens after the 12 weeks?", "acceptedAnswer": { "@type": "Answer", "text": "In week 10 we talk about your next cycle. Renew before week 12 and you get 10% off." } }
+          { "@type": "Question", "name": "Is there a commitment?", "acceptedAnswer": { "@type": "Answer", "text": "No. The subscription is monthly, renews automatically, and you can cancel whenever you want." } }
         ]
       }
     ]
@@ -127,7 +126,7 @@
   <div class="page">
 
     <header class="site-header">
-      <div class="promo"><span class="promo__tag">30% OFF</span>Shine by Fla founding group · only 10 spots</div>
+      <div class="promo"><span class="promo__tag">10% OFF</span>your 1st month of Shine by Fla · R$ 79.90 a month</div>
       <div class="site-header__bar">
         <a class="brand" href="#top">
           <span class="brand__mark"><svg aria-hidden="true" width="22" height="22"><use href="#i-sparkles"/></svg></span>
@@ -217,11 +216,11 @@
           <div class="split__text split__text--wide stack-18">
             <p class="pill pill--light">HOW IT WORKS</p>
             <h2>From your first step to your <span class="hl">first workout</span> in up to 3 days</h2>
-            <p class="muted">Four steps, and the cycle repeats every 4 weeks until you get where you want to be.</p>
+            <p class="muted">Four steps, and with each stage you finish you get new training until you reach your goal.</p>
             <ol class="steps">
               <li class="step">
                 <span class="num">1</span>
-                <div><h3>Day 0 form</h3><p>Your routine, goal, aches, photos and measurements, plus a 15-minute call.</p></div>
+                <div><h3>Intake form</h3><p>A form focused on understanding your challenges: routine, goal, history, aches and what made you quit before, with starting photos and measurements.</p></div>
               </li>
               <li class="step">
                 <span class="num">2</span>
@@ -233,7 +232,7 @@
               </li>
               <li class="step">
                 <span class="num">4</span>
-                <div><h3>New training every 4 weeks</h3><p>I compare your photos and measurements with day 0 and build the next block from what worked for you.</p></div>
+                <div><h3>New training after each stage</h3><p>Each stage of the program lasts 4 to 8 weeks. When you finish, I compare your photos and measurements with your starting point and build the next workout from what worked for you.</p></div>
               </li>
             </ol>
             <a class="btn btn--accent btn--inline" href="#plans">This is what I want!</a>
@@ -252,11 +251,8 @@
             <img src="../images/galeria-2.jpg" alt="Flavia biting her medal and smiling" width="900" height="1350" style="object-position: center 25%" loading="lazy" decoding="async">
             <img class="rail__wide" src="../images/galeria-3.jpg" alt="Flavia during the stage comparison" width="1800" height="1350" style="object-position: 78% center" loading="lazy" decoding="async">
             <img src="../images/galeria-4.jpg" alt="Black and white photo of Flavia in the backyard" width="900" height="1350" style="object-position: center 40%" loading="lazy" decoding="async">
-            <img src="../images/galeria-5.jpg" alt="Flavia in a side pose on stage" width="1350" height="1800" style="object-position: center 35%" loading="lazy" decoding="async">
-            <img src="../images/galeria-6.jpg" alt="Flavia smiling on stage" width="1350" height="1800" style="object-position: center 30%" loading="lazy" decoding="async">
             <img src="../images/galeria-7.jpg" alt="Flavia in a back pose on stage" width="1350" height="1800" style="object-position: center 35%" loading="lazy" decoding="async">
             <img src="../images/galeria-8.jpg" alt="Flavia walking on stage" width="1350" height="1800" style="object-position: center 40%" loading="lazy" decoding="async">
-            <img src="../images/galeria-9.jpg" alt="Flavia in a front pose on stage" width="1350" height="1800" style="object-position: center 30%" loading="lazy" decoding="async">
           </div>
         </div>
       </section>
@@ -268,7 +264,7 @@
             <h2>On Team Fla, <span class="hl-light">nobody trains alone</span></h2>
             <p class="coach__lede">Every week I see how yours went: workouts done, energy, sleep, aches and what got in the way. If you disappear, I notice and I come after you before you quit.</p>
             <ul class="coach__list">
-              <li><svg aria-hidden="true" width="20" height="20"><use href="#i-check"/></svg><span>A reply within 24 hours: 1 win, 1 adjustment and the focus for the week</span></li>
+              <li><svg aria-hidden="true" width="20" height="20"><use href="#i-check"/></svg><span>A reply within 24 hours, with your adjustment for the week</span></li>
               <li><svg aria-hidden="true" width="20" height="20"><use href="#i-check"/></svg><span>Tough week? Your workout becomes the express version, no guilt</span></li>
               <li><svg aria-hidden="true" width="20" height="20"><use href="#i-check"/></svg><span>WhatsApp Monday to Friday for questions and form corrections</span></li>
             </ul>
@@ -283,7 +279,7 @@
             </div>
             <div class="reply">
               <p class="card-label">Example · Fla's reply</p>
-              <p>Win: a new squat load even with sick kids. Adjustment: this week do workout C in the express version. Focus: go to bed 30 minutes earlier on two nights.</p>
+              <p>Congrats on the new squat load, even with sick kids! This week do workout C in the express version and try to go to bed 30 minutes earlier on two nights.</p>
             </div>
           </div>
         </div>
@@ -311,49 +307,33 @@
 
       <section id="plans" class="plans">
         <div class="plans__head">
-          <p class="pill pill--soft">12-WEEK PLANS</p>
-          <h2>Choose how to join <span class="hl">Team Fla</span></h2>
-          <p><strong>Founding group:</strong> 10 spots at 30% off, in exchange for your testimonial at the end of the 12 weeks.</p>
+          <p class="pill pill--soft">MONTHLY SUBSCRIPTION</p>
+          <h2>Join <span class="hl">Team Fla</span></h2>
+          <p>10% off your first month. Automatic renewal, no commitment: cancel whenever you want.</p>
         </div>
-        <div class="plans__grid">
-          <div class="plan">
-            <div>
-              <h3>Essential</h3>
-              <p class="plan__for">For those who already train and want direction</p>
-            </div>
-            <div>
-              <p class="plan__note"><s>R$ 397</s> for the founding group</p>
-              <p class="plan__price">R$ 277.90</p>
-              <p class="plan__note">for 12 weeks</p>
-            </div>
-            <ul class="plan__list">
-              <li>Individual training with videos</li>
-              <li>Check-in every 2 weeks</li>
-              <li>New training every 4 weeks</li>
-              <li>WhatsApp Monday to Friday</li>
-              <li>General nutrition guidance</li>
-            </ul>
-            <a class="btn btn--soft btn--plan" href="https://wa.me/17543263220?text=Hi%20Fla!%20I%20want%20to%20join%20Team%20Fla%20on%20the%20Essential%20plan." rel="noopener">I want Essential</a>
-          </div>
+        <div class="plans__grid plans__grid--single">
           <div class="plan plan--featured">
-            <p class="plan__flag">Recommended</p>
+            <p class="plan__flag">Shine Plan</p>
             <div>
               <h3>Coaching</h3>
               <p class="plan__for">For those who have quit before and need someone alongside them</p>
             </div>
             <div>
-              <p class="plan__note"><s>R$ 597</s> for the founding group</p>
-              <p class="plan__price">R$ 417.90</p>
-              <p class="plan__note">for 12 weeks</p>
+              <p class="plan__note"><s>R$ 79.90</s></p>
+              <p class="plan__price">R$ 71.91</p>
+              <p class="plan__note">for the first month, then R$ 79.90 a month</p>
             </div>
             <ul class="plan__list">
-              <li>Everything in Essential</li>
+              <li>Intake form focused on your challenges</li>
+              <li>Individual training with videos, at home or at the gym</li>
               <li><strong>Weekly check-in</strong> with a reply within 24h</li>
-              <li>15-minute call every 4 weeks</li>
+              <li>New training after each stage (4 to 8 weeks)</li>
+              <li>WhatsApp Monday to Friday</li>
               <li>Exclusive Team Fla group</li>
-              <li>Photo and measurement comparison with day 0</li>
+              <li>General nutrition guidance</li>
             </ul>
-            <a class="btn btn--accent btn--plan" href="https://wa.me/17543263220?text=Hi%20Fla!%20I%20want%20to%20join%20Team%20Fla%20on%20the%20Coaching%20plan." rel="noopener">This is what I want!</a>
+            <!-- Replace with the subscription payment link once checkout is ready. -->
+            <a class="btn btn--accent btn--plan" href="https://wa.me/17543263220?text=Hi%20Fla!%20I%20want%20to%20subscribe%20to%20the%20Team%20Fla%20Coaching%20plan." rel="noopener">This is what I want!</a>
           </div>
         </div>
         <div class="guarantee">
@@ -372,9 +352,9 @@
             <details><summary>I don't have much time. Will it work for me?</summary><p>Yes. Every workout has an express version, and workouts go by letter: miss a day and you pick up where you left off.</p></details>
             <details><summary>Do I need a gym?</summary><p>No. I build your training around what you have, at home or at the gym.</p></details>
             <details><summary>Is a diet included?</summary><p>You get general nutrition guidance. An individual meal plan comes from a nutritionist.</p></details>
-            <details><summary>I've never trained. Can I join?</summary><p>Yes. Your day 0 form sets your level, and the videos show every exercise.</p></details>
+            <details><summary>I've never trained. Can I join?</summary><p>Yes. Your intake form sets your level, and the videos show every exercise.</p></details>
             <details><summary>How do I ask questions?</summary><p>On WhatsApp, Monday to Friday. You can send a video of an exercise for me to correct.</p></details>
-            <details><summary>What happens after the 12 weeks?</summary><p>In week 10 we talk about your next cycle. Renew before week 12 and you get 10% off.</p></details>
+            <details><summary>Is there a commitment?</summary><p>No. The subscription is monthly, renews automatically, and you can cancel whenever you want.</p></details>
           </div>
         </div>
       </section>
@@ -384,7 +364,7 @@
           <img src="../images/cta-medalhas.jpg" alt="Flavia raising her medals in the foreground" width="900" height="1350" loading="lazy" decoding="async">
           <div class="final__copy">
             <h2>Your after is still <span class="hl-light">being built</span></h2>
-            <p>There are only 10 spots in the Team Fla founding group. Grab yours or comment SPOT on <a href="https://www.instagram.com/_flaviaa.ribeiro_/" rel="noopener">my Instagram</a>.</p>
+            <p>Start with 10% off your first month. Grab your spot or comment VAGA on <a href="https://www.instagram.com/_flaviaa.ribeiro_/" rel="noopener">my Instagram</a>.</p>
             <a class="btn btn--rose" href="#plans">I want to join Team Fla</a>
             <p class="final__ps"><strong>PS:</strong> I've started over many times too. The difference was to stop looking for shortcuts and have a plan that fit my life. That's what I want to give you.</p>
           </div>

@@ -1,6 +1,6 @@
 # flaribeiro.com
 
-Sales page for Shine by Fla, the 12-week coaching program by Flavia Ribeiro.
+Sales page for Shine by Fla, the monthly coaching subscription by Flavia Ribeiro.
 Portuguese at `/` and English at `/en/`, plain HTML and CSS, no build step. The
 only JavaScript is Google Analytics and a redirect for old `?lang=en` links. Deployed on GitHub Pages at [flaribeiro.com](https://flaribeiro.com).
 
@@ -22,7 +22,7 @@ python3 -m http.server 8000
 ## Content still missing
 
 - Testimonials: the "Elas começaram de onde você está" section sits in an HTML comment in `index.html`. Activate it once real, authorized testimonials exist.
-- Plan buttons open WhatsApp with a message naming the plan. Swap the `wa.me` links for checkout links if a payment page gets added.
+- The plan button opens WhatsApp until checkout exists. Replace the `wa.me` link on both pages with the subscription payment link, marked with a comment. Checkout needs a R$ 79,90 monthly subscription and a 10% coupon valid only for the first month.
 
 ## DNS
 
